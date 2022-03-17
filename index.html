@@ -7,12 +7,13 @@
   </head>
   <body style="text-align: center">
     <canvas id="unity-canvas" width=750 height=1334 style="width: 750px; height: 1334px; background: #231F20"></canvas>
-    <script src="Build/Builds.loader.js"></script>
+    <script src="Build/Builds.asm.loader.js"></script>
     <script>
       createUnityInstance(document.querySelector("#unity-canvas"), {
         dataUrl: "Build/Builds.data",
-        frameworkUrl: "Build/Builds.framework.js",
-        codeUrl: "Build/Builds.wasm",
+        frameworkUrl: "Build/Builds.asm.framework.js",
+        codeUrl: "Build/Builds.asm.js",
+        memoryUrl: "Build/Builds.asm.mem",
         streamingAssetsUrl: "StreamingAssets",
         companyName: "OIC",
         productName: "OIC Game",
